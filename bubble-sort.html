@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bubble Sort</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper teal">
+                    <a href="index.html" class="teal-text text-lighten-5" style="padding:1em">Sortings</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">                     
+                        <li><a href="bubble-sort.html">Bubble Sort</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="bubble-sort.html">Bubble Sort</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main class="teal lighten-3">
+            <br><br>
+            <br><br>
+            <div class="row">
+                <div class="input-field col l6 offset-l3 col s6 offset-s3 m6 offset-m3">
+                    <input placeholder="Number" id="to-sort" type="number" class="validate">
+                    <label for="to-sort">Number(s) to sort</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l6 offset-l3 col s6 offset-s3 m6 offset-m3">
+                    <input readonly placeholder="input" id="inserted-numbers" type="text" class="validate">
+                    <label for="inserted-numbers">Inserted numbers</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l2 m3 s12 offset-l3 offset-m3 offset-s3">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+                <div class="col l2 m3 s12 offset-s3">
+                    <button id="sort-button" class="btn waves-effect waves-light" type="submit" name="action">Clear
+                        <i class="material-icons right">clear</i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l6 offset-l3 col s6 offset-s3 m6 offset-m3">
+                    <textarea disabled readonly id="sorted-numbers" type="number" class="materialize-textarea"></textarea>
+                    <label for="sorted-numbers">Sorted numbers</label>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer teal">
+          <div class="footer-copyright">
+            <div class="container center-align">
+            © 2017 Steveq
+            </div>
+          </div>
+        </footer>
+        <script type="text/javascript" src="bubble-sort.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+</html>

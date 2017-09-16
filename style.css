@@ -7,3 +7,14 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+ /*icon prefix focus color */
+.input-field .prefix.active {
+    color: #009688;
+}
+@media only screen and (max-width: 600px) {
+    div.col.s12 button#sort-button{
+        margin-top: 2em;
+    }
+}
+     
